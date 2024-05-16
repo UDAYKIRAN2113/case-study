@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to the Grocery Store</h2>
+        <div class="user-info">
+            <div>
+            <span id="username"></span>
+            <span id="logout" onclick="logoutUser()">Logout</span>
+        </div>
+            <img src="https://static.vecteezy.com/system/resources/previews/019/787/045/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png" alt="Cart" id="cart">
+        </div>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://images.heb.com/is/image/HEBGrocery/000325189-1?$article-235-square$" alt="Grocery Item 1">
+                <div class="details">
+                    <h3>Apple</h3>
+                    <p>Price: $10.99</p>
+                    <button onclick="addToCart('Apple')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://ml4l5wfimak6.i.optimole.com/7Bumah0-7uCDyyH-/w:1200/h:1200/q:auto/rt:fill/g:ce/https://sapinsdairy.com/wp-content/uploads/2021/12/milk-bottle.png" alt="Grocery Item 2">
+                <div class="details">
+                    <h3>Milk</h3>
+                    <p>Price: $8.49</p>
+                    <button onclick="addToCart('Milk')">Add to Cart</button>
+                </div>
+            </div>
+           
+                    <div class="product">
+                        <img src="https://images.heb.com/is/image/HEBGrocery/000325189-1?$article-235-square$" alt="Grocery Item 1">
+                        <div class="details">
+                            <h3>Apple</h3>
+                            <p>Price: $10.99</p>
+                            <button onclick="addToCart('Apple')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="https://ml4l5wfimak6.i.optimole.com/7Bumah0-7uCDyyH-/w:1200/h:1200/q:auto/rt:fill/g:ce/https://sapinsdairy.com/wp-content/uploads/2021/12/milk-bottle.png" alt="Grocery Item 1">
+                        <div class="details">
+                            <h3> Milk</h3>
+                            <p>Price: $10.99</p>
+                            <button onclick="addToCart('Milk')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="https://images.heb.com/is/image/HEBGrocery/000325189-1?$article-235-square$" alt="Grocery Item 1">
+                        <div class="details">
+                            <h3>Apple</h3>
+                            <p>Price: $10.99</p>
+                            <button onclick="addToCart('Apple')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="https://ml4l5wfimak6.i.optimole.com/7Bumah0-7uCDyyH-/w:1200/h:1200/q:auto/rt:fill/g:ce/https://sapinsdairy.com/wp-content/uploads/2021/12/milk-bottle.png" alt="Grocery Item 1">
+                        <div class="details">
+                            <h3> Milk</h3>
+                            <p>Price: $10.99</p>
+                            <button onclick="addToCart('Milk')">Add to Cart</button>
+                        </div>
+                    </div>
+            <!-- Add more product listings as needed -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Retrieve username from local storage and display it
+        document.getElementById('username').textContent = localStorage.getItem('name');
+
+        // Function to add item to cart
+        function addToCart(productName) {
+            alert(`Added ${productName} to cart.`);
+            // Implement cart functionality here
+        }
+    </script>
+</body>
+</html>
